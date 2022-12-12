@@ -37,6 +37,10 @@ class Softplay {
   occupancy() {
     return { adults: this.numAdults, children: this.numChildren }
   }
+
+  total() {
+    return this.numAdults + this.numChildren
+  }
 }
 
 const funCentre = new Softplay(6, 6)
